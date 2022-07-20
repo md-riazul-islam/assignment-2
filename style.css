@@ -17,7 +17,7 @@ main{
 } */
 
 .container{
-    
+    width: 100%;
     background-color: #161616;
     border-radius: 30px;
     margin-bottom: 50px;
@@ -42,11 +42,10 @@ main{
 }
 .sub-text h1{
     font-size: 40px;
+   
 }
 
-.sub-banner img{
-    height: 400px;
-}
+
 .link-button{
     text-decoration: none;
     color: #ffffff;
