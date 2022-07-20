@@ -6,17 +6,18 @@ body{
     font-family: 'Poppins', sans-serif;
     margin: 0;
 }
-
-/* common style */
-section{
+main{
     width: 80%;
     margin: 0px auto;
 }
+/* common style */
+/* section{
+    width: 80%;
+    margin: 0px auto;
+} */
 
 .container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    
     background-color: #161616;
     border-radius: 30px;
     margin-bottom: 50px;
@@ -26,18 +27,15 @@ section{
 /* header aria style */
 .header-text{
     width: 100%;
+    display: flex;
 }
-.banner{
-    width: 100%;
-}
-.sub-banner{
-    width: 100%;
-}
+
+
 .sub-text {
-    width: 100%;
-    margin: 10px;
-    padding: 10px 10px;
+   margin: 10px;
+    
 }
+
 
 .sub-text, h1, p{
     color: #ffffff;
@@ -45,9 +43,7 @@ section{
 .sub-text h1{
     font-size: 40px;
 }
-.sub-text p{
-    font-size: 16px;
-}
+
 .sub-banner img{
     height: 400px;
 }
@@ -81,8 +77,7 @@ section{
     border-radius: 10px;
  }
  .match-link-button{
-    /* width: 200px; */
-    /* height: 64px; */
+    
     text-decoration: none;
     display: inline-block;
     color:black;
@@ -155,7 +150,9 @@ hr{
 
 /* responsive style start */
 /* tablet */
-@media screen and (min-width:578px) and  (max-width:992px){
+@media screen and (min-width:668px) and  (max-width:992px){
+    
+    
     .footballers{
         display: block;
     }
@@ -164,10 +161,15 @@ hr{
        
     }
     .sub-match-update{
+        width: 100%;
         background-color: white;
         display: flex;
         flex-direction: row;
        
+    }
+    .match-link-button{
+        display: inline-block;
+        text-align: center;
     }
    
     .sub-match-update li a{
@@ -181,10 +183,20 @@ hr{
         text-align: center;
     }
    
+   .sub-text , h1{
+    font-size: 20px;
+   }
+   
 }
-@media screen and (max-width:577px) {
+@media screen and (max-width:667px) {
     .players{
         grid-template-columns: repeat(1, 1fr);
+    }
+    .container{
+        display: block;
+    }
+    .link-button{
+        margin: 0px auto;
     }
     .footballers{
         display: block;
